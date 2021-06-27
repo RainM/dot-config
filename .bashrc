@@ -217,8 +217,9 @@ then
 fi
 
 # add folder for custom binaries
-LOCAL_BIN=$(readlink -f ~/.local/bin)
-export PATH=$LOCAL_BIN:$PATH
+# readlink doesn'twork on OSX. What could I do?
+#LOCAL_BIN=$(readlink -f ~/.local/bin)
+#export PATH=$LOCAL_BIN:$PATH
 
 # Compatibility for ST and BASH
 # http://git.suckless.org/st/plain/FAQ
