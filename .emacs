@@ -15,8 +15,10 @@
 (size-indication-mode	       nil)
 
 (menu-bar-mode -1) ; disable benu bar at all
-(toggle-scroll-bar -1) 
-(tool-bar-mode -1)
+(if (display-graphic-p)
+    (progn
+      (tool-bar-mode -1)
+      (scroll-bar-mode -1)))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; setup MELPA packages ;;
