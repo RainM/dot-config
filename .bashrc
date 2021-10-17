@@ -111,7 +111,7 @@ alias egrep='egrep --color=auto'              # show differences in colour
 # alias ls='ls -hF --color=tty'                 # classify files in colour
 # alias dir='ls --color=auto --format=vertical'
 # alias vdir='ls --color=auto --format=long'
-alias ll='ls -lah --color'                              # long list
+alias ll='ls -lah'                              # long list
 # alias la='ls -A'                              # all but . and ..
 # alias l='ls -CF'                              #
 
