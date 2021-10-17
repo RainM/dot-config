@@ -34,7 +34,7 @@
 
 ;(package-refresh-contents)
 (setq auto-install-packages
-      '(color-theme-modern undo-tree nlinum-hl))
+      '(color-theme-modern undo-tree nlinum-hl solidity-mode))
 (dolist (pkg auto-install-packages)
   (unless (package-installed-p pkg)
     (package-install pkg)))
