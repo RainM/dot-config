@@ -13,6 +13,8 @@
 (setq display-time-24hr-format t)
 (display-time-mode	       t)
 (size-indication-mode	       nil)
+(setq-default tab-width 4)
+(setq-default indent-tabs-mode nil)
 
 (menu-bar-mode -1) ; disable benu bar at all
 (if (display-graphic-p)
