@@ -36,10 +36,25 @@
 
 ;(package-refresh-contents)
 (setq auto-install-packages
-      '(color-theme-modern undo-tree nlinum-hl solidity-mode highlight-parentheses))
+      '(
+        color-theme-modern
+        undo-tree
+        nlinum-hl
+        solidity-mode
+        highlight-parentheses
+        auto-highlight-symbol
+        ))
 (dolist (pkg auto-install-packages)
   (unless (package-installed-p pkg)
     (package-install pkg)))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(require 'auto-highlight-symbol)
+(global-auto-highlight-symbol-mode t)
+
+(require 'highlight-parentheses)
+(global-highlight-parentheses-mode t)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
