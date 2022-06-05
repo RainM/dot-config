@@ -17,5 +17,9 @@ cp $DIR.minttypc ~/.minttypc
 echo "Copy .tmux.conf"
 cp $DIR.tmux.conf ~/.tmux.conf
 
+cp $DIR/.profile ~/.profile
+cp $DIR/i3_config ~/.config/i3/config
+cp $DIR/i3status_config ~/.config/i3status/config
+cp $DIR/i3status2.sh ~/.local/bin/i3status.sh
 
 echo "Done!"
